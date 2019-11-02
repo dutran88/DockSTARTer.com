@@ -13,3 +13,19 @@ Run the below command (from a terminal) to change the permissions if required.
 `sudo chown -R owner:group ~/.config/appdata/bitwarden`
 
 Having the owner group change will allow you to edit the files if required without running into permission issues.
+
+## Using MariaDB for your database instead of the self container
+
+Create an overide to look like this:
+
+```yaml
+version: "3.4"  # this must match the version in docker-compose.yml
+services:
+  bitwarden:
+    environment:
+    - DATABASE_URL=mysql://bitwardenrs:password@mariadb/bitwarden
+    - ENABLE_DB_WAL=false
+    image: bitwardenrs/server-mysql
+```
+
+Credit to [Nemchik](https://github.com/nemchik)
