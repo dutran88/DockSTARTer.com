@@ -1,5 +1,12 @@
 # LetsEncrypt
 
+Letsencrypt sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.
+
+- App: [[Website](https://letsencrypt.org/)] [[App Source](https://github.com/linuxserver/docker-letsencrypt)]
+- Docker Image: [[Docker Hub](https://hub.docker.com/)] [[Image Source](https://hub.docker.com/r/linuxserver/letsencrypt/)]
+
+---
+
 ## LinuxServer's NGINX/LetsEncrypt Starter Guide
 
 If this is your first time learning about NGINX and LetsEncrypt, we highly recommend you read over their official guide, which can be found [here](https://blog.linuxserver.io/2019/04/25/letsencrypt-nginx-starter-guide/)

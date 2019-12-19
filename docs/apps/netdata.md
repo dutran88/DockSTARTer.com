@@ -1,4 +1,11 @@
-# netdata
+# Netdata
+
+Netdata is an open source tool to visualize and monitor real-time metrics, optimized to accumulate all types of data, such as CPU usage, disk activity, SQL queries, visits to a website, etc.
+
+- App: [[Website](http://apps-website)] [[App Source](https://github.com/netdata/netdata)]
+- Docker Image: [[Docker Hub](https://hub.docker.com/)] [[Image Source](https://hub.docker.com/r/netdata/netdata)]
+
+---
 
 By default, netdata will pull from a UID for the container itself to display in the list of netdata servers you have, so you would see something like '0f2342dac'. To define this and make it more readable/recognizable for you (In case you have multiple netdata servers):
 

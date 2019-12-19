@@ -1,5 +1,12 @@
 # Grafana
 
+Description sentence(s).
+
+- App: [[Website](https://grafana.com/)] [[App Source](https://github.com/grafana/grafana)]
+- Docker Image: [[Docker Hub](https://hub.docker.com/)] [[Image Source](https://hub.docker.com/r/grafana/grafana/)]
+
+---
+
 ## Fix for permission problems
 
 If you see the following error:

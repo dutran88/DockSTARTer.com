@@ -1,5 +1,12 @@
 # Guacamole
 
+A Docker Container for Apache Guacamole, a client-less remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH over HTML5.
+
+- App: [[Website](https://guacamole.apache.org/)] [[App Source](https://github.com/oznu/docker-guacamole)]
+- Docker Image: [[Docker Hub](https://hub.docker.com/)] [[Image Source](https://hub.docker.com/r/oznu/guacamole)]
+
+---
+
 This guide will help you replicate Gilbn's tutorial to protect your Guacamole install with F2B
 
 Since DockSTARTer uses Oznu's image for Guacamole, it only generates logs inside the container itself. Following these steps will allow you to get the Guacamole container to generate a log file in `~/.config/appdata/guacamole` which you can then mount to the LetsEncrypt container so F2B can monitor it and ban malicious IPs.
