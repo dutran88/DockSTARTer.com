@@ -1,4 +1,4 @@
-# 
+# AppName
 
 Description sentence(s).
 
@@ -6,5 +6,3 @@ Description sentence(s).
 - Docker Image: [[Docker Hub](https://hub.docker.com/)] [[Image Source](http://github-for-the-image)]
 
 ---
-
-stopped at ombi
