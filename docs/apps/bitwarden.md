@@ -22,21 +22,22 @@ Great way to go about this would be installing phpmyadmin and MariaDB from the s
 
 By default, MariaDB and PhpMyAdmin is already linked together. So go ahead and open your PhpMyAdmin portal
 
-Once on the PhPMyAdmin Portal. Create a new database and user for your bitwarden account. 
+Once on the PhPMyAdmin Portal. Create a new a bitwarden database and user for your bitwarden account. 
 
 ![PhpMyAdmin_Portal](https://i.ibb.co/LhkFS9p/phpmyadmin-db-creation.png)
 
-If that's seems too long, I find it easy to create users and databases is to run ``` docker exec ``` command
+If that's seems too long, I find it easier to create users and databases by running ``` docker exec ``` command.
 
 On your DockStarter terminal; type in the command below to connect to your container. Once there, use ``` mysql ``` command and database username and password. 
 
 ```bash
-DockStarter@192.168.2.1:~$ docker exec -it mariadb bash
+docker exec -it mariadb bash
 ```
 
 ```bash
 # if you didnt set a root password inside your enviorment file, then just hit return.
-root@192.168.1.1:/# mysql --user=root --password="somepassword"
+
+mysql --user=root --password="somepassword"
 ```
 If you see the message below, continue on and create your bitwarden database and user
 
@@ -63,11 +64,11 @@ MariaDB [(none)]> GRANT USAGE ON *.* TO 'bitwarden_user'@192.168.1.1 IDENTIFIED 
 
 # Grant all privileges to bitwarden_user to access bitwarden_db: 
 
-MariaDB [(none)]> GRANT ALL privileges ON `bitwarden_db:`.* TO 'bitwarden_user'@192.168.1.1 ;
+MariaDB [(none)]> GRANT ALL privileges ON `bitwarden_db:`.* TO 'bitwarden_user'@192.168.1.1;
 
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
-VERIFY and Database
+Verify Database and Exit
 
 ```sql
 MariaDB [(none)]> SHOW GRANTS FOR 'bitwarden_user'@192.168.1.1;
@@ -89,6 +90,8 @@ MariaDB [(none)]> SHOW DATABASES;
 | performance_schema |
 +--------------------+
 5 rows in set (0.001 sec)
+
+MariaDB [(none)]> EXIT
 ```
 Finally create an Override file: 
 
