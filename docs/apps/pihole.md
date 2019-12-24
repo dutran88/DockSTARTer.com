@@ -2,6 +2,12 @@
 
 Pi-hole takes over the local DNS service and may conflict with existing DNS services on your server. Ubuntu 18.04 currently uses systemd-resolv to server DNS and needs to be configured to either give up port 53 or be disabled.
 
+- App: [[Website]([http://apps-website](https://pi-hole.net/))] [[App Source]([http://github-for-the-app](https://github.com/pi-hole/docker-pi-hole))]
+- Docker Image: [[Docker Hub](https://hub.docker.com/)] [[Image Source]([http://github-for-the-image](https://hub.docker.com/r/pihole/pihole/))]
+
+---
+
+
 ## Netplan setup
 
 On Ubuntu 18.04 and newer you will have `netplan` controlling your network and should see [https://netplan.io/](https://netplan.io/) for examples on how to configure it. You need to set your nameserver to use your LAN's DNS or a public DNS such as `1.1.1.1` before proceeding with any instructions below.

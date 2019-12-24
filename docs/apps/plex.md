@@ -1,5 +1,12 @@
 # Plex
 
+Plex organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone Plex Media Server. has always been a top priority. Straightforward design and bulk actions mean getting things done faster.
+
+- App: [[Website](https://plex.tv/)] [[App Source](https://github.com/linuxserver/docker-plex)]
+- Docker Image: [[Docker Hub](https://hub.docker.com/)] [[Image Source](https://hub.docker.com/r/linuxserver/plex/)]
+
+---
+
 ## Cannot Setup Server On First Run
 
 Upon starting up Plex for the first time, it's very likely you'll need to follow these steps:

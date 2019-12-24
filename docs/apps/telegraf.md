@@ -1,15 +1,13 @@
 # Telegraf
 
----
-
 [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/) is an agent written in Go for collecting performance metrics from the system it's running on and the services running on that system. The collected metrics are output to InfluxDB or or other supported data stores.
 
-- App: 
-- Docker Image: 
+- App: [[Website](https://www.influxdata.com/time-series-platform/telegraf/)] [[App Source](https://github.com/influxdata/telegraf)]
+- Docker Image: [[Docker Hub](https://hub.docker.com/)] [[Image Source](https://hub.docker.com/_/telegraf)]
 
 ---
 
-When you first install telegraf from DS, you will encounter an error simular the log below:
+When you first install Telegraf from DS, you will encounter an error similar the log below:
 
 ```.logs
 [outputs.influxdb] when writing to [http://localhost:8086]: connect: connection refused ....

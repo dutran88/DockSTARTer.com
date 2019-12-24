@@ -1,1 +1,9 @@
-Placeholder page
+# Quassel-core
+
+Quassel-core is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core.
+This container handles the IRC connection (quasselcore) and requires a desktop client (quasselclient) to be used and configured. It is designed to be always on and will keep your identity present in IRC even when your clients cannot be online. Backlog (history) is downloaded by your client upon reconnection allowing infinite scrollback through time.
+
+- App: [[Website](https://docs.linuxserver.io/images/docker-quassel-core)] [[App Source](https://github.com/linuxserver/docker-quassel-core)]
+- Docker Image: [[Docker Hub](https://hub.docker.com/)] [[Image Source](https://hub.docker.com/r/linuxserver/quassel-core/dockerfile)]
+
+---

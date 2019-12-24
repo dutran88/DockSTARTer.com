@@ -1,6 +1,11 @@
-# OpenVPNAS
+# OpenVPN-AS
 
-Information pulled from [Docker Hub](https://hub.docker.com/r/linuxserver/openvpn-as/) and edited for relevance.
+Openvpn-as is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments. OpenVPN Access Server supports a wide range of configurations, including secure and granular remote access to internal network and/ or private cloud network resources and applications with fine-grained access control.
+
+- App: [[Website]([http://apps-website](https://openvpn.net/vpn-server/))] [[App Source]([http://github-for-the-app](https://github.com/linuxserver/docker-openvpn-as))]
+- Docker Image: [[Docker Hub](https://hub.docker.com/)] [Image Source](https://hub.docker.com/r/linuxserver/openvpn-as/)
+
+---
 
 ## Setting up the application
 

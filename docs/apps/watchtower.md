@@ -1,5 +1,13 @@
 # Watchtower
 
+Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially. Run the watchtower container with the following command:
+
+- App: [[Website](http://apps-website)] [[App Source](https://github.com/containrrr/watchtower)]
+- Docker Image: [[Docker Hub](https://hub.docker.com/)] [[Image Source](https://hub.docker.com/r/containrrr/watchtower)]
+
+---
+
+
 ## Notifications
 
 You can use an override for notifications to your favorite method (E-mail, Slack/Discord, MS Teams are supported in Watchtower currently):
